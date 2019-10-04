@@ -1,0 +1,29 @@
+{
+    "name": "inweb/admin-translatable-phrases",
+    "description": "InWeb Admin tool",
+    "keywords": [
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "inwebcomp/translations-parser": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "InWeb\\Admin\\TranslatablePhrases\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "InWeb\\Admin\\TranslatablePhrases\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
