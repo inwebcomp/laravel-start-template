@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa1dcd3484ab2d232f1dfcbc31f9499f",
+    "content-hash": "b7768134bf941a850e807a8332c44375",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -629,16 +629,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
                 "shasum": ""
             },
             "require": {
@@ -651,24 +651,24 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
             },
             "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -676,12 +676,33 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
                 },
                 {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
                     "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
                 }
             ],
@@ -696,7 +717,25 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-20T21:51:18+00:00"
         },
         {
             "name": "intervention/image",
@@ -833,47 +872,21 @@
             "time": "2019-10-01T14:23:28+00:00"
         },
         {
-            "name": "inweb/admin-features-field",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./admin-components/Fields/FeaturesField",
-                "reference": "5319a48f5516fda885e462f3a08c47d6032ad55a"
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Admin\\Fields\\FeaturesField\\FieldServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Admin\\Fields\\FeaturesField\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "InWeb Admin field.",
-            "keywords": [
-                "laravel"
-            ]
-        },
-        {
             "name": "inweb/admin-resource-tool-images",
-            "version": "dev-master",
+            "version": "8.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inwebcomp/admin-resource-tool-images.git",
+                "reference": "325a5d68aaa2e2007433567af68104d24e59e7df"
+            },
             "dist": {
-                "type": "path",
-                "url": "./admin-components/ResourceTools/Images",
-                "reference": "d17cfb016deb386d7828864cdf172dbea95c0867"
+                "type": "zip",
+                "url": "https://api.github.com/repos/inwebcomp/admin-resource-tool-images/zipball/325a5d68aaa2e2007433567af68104d24e59e7df",
+                "reference": "325a5d68aaa2e2007433567af68104d24e59e7df",
+                "shasum": ""
             },
             "require": {
-                "php": ">=7.1.0"
+                "php": "^7.1|^8.0"
             },
             "type": "library",
             "extra": {
@@ -888,24 +901,36 @@
                     "Admin\\ResourceTools\\Images\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "InWeb Admin resource tool for images manipulation",
             "keywords": [
                 "laravel"
-            ]
+            ],
+            "support": {
+                "issues": "https://github.com/inwebcomp/admin-resource-tool-images/issues",
+                "source": "https://github.com/inwebcomp/admin-resource-tool-images/tree/8.0.2"
+            },
+            "time": "2021-12-16T20:24:49+00:00"
         },
         {
             "name": "inweb/admin-resource-tool-metadata",
-            "version": "dev-master",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inwebcomp/admin-resource-tool-metadata.git",
+                "reference": "f91081ad8bf946b3a323316fc718d33b004b4e6e"
+            },
             "dist": {
-                "type": "path",
-                "url": "./admin-components/ResourceTools/Metadata",
-                "reference": "c0df599dbaea8d4b8f78dbf05f9b622ba6d7b37f"
+                "type": "zip",
+                "url": "https://api.github.com/repos/inwebcomp/admin-resource-tool-metadata/zipball/f91081ad8bf946b3a323316fc718d33b004b4e6e",
+                "reference": "f91081ad8bf946b3a323316fc718d33b004b4e6e",
+                "shasum": ""
             },
             "require": {
-                "php": ">=7.1.0"
+                "php": "^7.1|^8.0"
             },
             "type": "library",
             "extra": {
@@ -920,25 +945,38 @@
                     "Admin\\ResourceTools\\Metadata\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "InWeb Admin resource tool",
+            "description": "InWeb Admin resource tool for metadata management",
             "keywords": [
-                "laravel"
-            ]
+                "laravel",
+                "metadata"
+            ],
+            "support": {
+                "issues": "https://github.com/inwebcomp/admin-resource-tool-metadata/issues",
+                "source": "https://github.com/inwebcomp/admin-resource-tool-metadata/tree/8.0.0"
+            },
+            "time": "2021-12-13T23:49:36+00:00"
         },
         {
             "name": "inweb/admin-translatable-phrases",
-            "version": "dev-master",
+            "version": "8.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inwebcomp/admin-translatable-phrases.git",
+                "reference": "a79dc009d74b2e432bcdd86979173f6481d9f1b3"
+            },
             "dist": {
-                "type": "path",
-                "url": "./admin-components/Tools/TranslatablePhrases",
-                "reference": "f7b3b8c75edcb6ded4257bc7c6c9da4cfc723d35"
+                "type": "zip",
+                "url": "https://api.github.com/repos/inwebcomp/admin-translatable-phrases/zipball/a79dc009d74b2e432bcdd86979173f6481d9f1b3",
+                "reference": "a79dc009d74b2e432bcdd86979173f6481d9f1b3",
+                "shasum": ""
             },
             "require": {
-                "inwebcomp/translations-parser": "*",
-                "php": ">=7.1.0"
+                "inweb/translations-parser": "^8.0",
+                "php": "^7.1|^8.0"
             },
             "type": "library",
             "extra": {
@@ -953,13 +991,19 @@
                     "InWeb\\Admin\\TranslatablePhrases\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "InWeb Admin tool",
             "keywords": [
                 "laravel"
-            ]
+            ],
+            "support": {
+                "issues": "https://github.com/inwebcomp/admin-translatable-phrases/issues",
+                "source": "https://github.com/inwebcomp/admin-translatable-phrases/tree/8.0.3"
+            },
+            "time": "2021-12-13T23:49:45+00:00"
         },
         {
             "name": "inweb/base",
@@ -1086,6 +1130,62 @@
                 "media"
             ],
             "time": "2019-07-02T17:38:55+00:00"
+        },
+        {
+            "name": "inweb/translations-parser",
+            "version": "8.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inwebcomp/translations-parser.git",
+                "reference": "8fe2e4248255e0f4dd0f2ac0045c4de331267d37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inwebcomp/translations-parser/zipball/8fe2e4248255e0f4dd0f2ac0045c4de331267d37",
+                "reference": "8fe2e4248255e0f4dd0f2ac0045c4de331267d37",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "InWeb\\TranslationsParser\\TranslationsParserServiceProvider"
+                    ],
+                    "aliases": {
+                        "TranslationsParser": "InWeb\\TranslationsParser\\TranslationsParserFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "InWeb\\TranslationsParser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Topalo",
+                    "email": "inwebcomp@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parse files and pull translatable phrases",
+            "homepage": "https://github.com/inwebcomp/translations-parser",
+            "keywords": [
+                "inwebcomp",
+                "translations-parser"
+            ],
+            "support": {
+                "issues": "https://github.com/inwebcomp/translations-parser/issues",
+                "source": "https://github.com/inwebcomp/translations-parser/tree/8.0.2"
+            },
+            "time": "2021-12-13T23:49:53+00:00"
         },
         {
             "name": "inwebcomp/translations-parser",
@@ -2322,6 +2422,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -2531,6 +2634,10 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
@@ -6039,5 +6146,6 @@
         "ext-curl": "*",
         "ext-json": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
